@@ -15,20 +15,27 @@
         </repository>
     </repositories>
     <dependencies>
-
-        <!-- https://mvnrepository.com/artifact/edu.stanford.nlp/stanford-corenlp -->
         <dependency>
-            <groupId>edu.stanford.nlp</groupId>
-            <artifactId>stanford-corenlp</artifactId>
-            <version>3.8.0</version>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>LATEST</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <artifactId>com.google</artifactId>
+            <groupId>Ab</groupId>
+            <version>0.0.4.3</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/Ab.jar</systemPath>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/edu.stanford.nlp/stanford-adept -->
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
         <dependency>
-            <groupId>edu.stanford.nlp</groupId>
-            <artifactId>stanford-adept</artifactId>
-            <version>2.7.3</version>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.5</version>
         </dependency>
+
 
         <!-- OPEN NLP -->
         <dependency>
@@ -142,11 +149,6 @@
         </dependency>
         <dependency>
             <groupId>org.telegram</groupId>
-            <artifactId>telegrambots-meta</artifactId>
-            <version>LATEST</version>
-        </dependency>
-        <dependency>
-            <groupId>org.telegram</groupId>
             <artifactId>telegrambots-abilities</artifactId>
             <version>LATEST</version>
         </dependency>
@@ -159,6 +161,11 @@
             <groupId>org.telegram</groupId>
             <artifactId>telegrambots</artifactId>
             <version>3.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.telegram</groupId>
+            <artifactId>telegrambots-meta</artifactId>
+            <version>LATEST</version>
         </dependency>
     </dependencies>
 
