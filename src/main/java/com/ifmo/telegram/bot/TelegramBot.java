@@ -1,3 +1,5 @@
+package com.ifmo.telegram.bot;
+
 import lombok.SneakyThrows;
 import org.alicebot.ab.*;
 import org.telegram.telegrambots.ApiContextInitializer;
@@ -23,7 +25,6 @@ public class TelegramBot extends TelegramLongPollingBot {
         });
     }
 
-    @SneakyThrows
     @Deprecated
     @Override
     public void onUpdateReceived(Update update) {
@@ -59,7 +60,7 @@ public class TelegramBot extends TelegramLongPollingBot {
         }
     }
 
-
+    @SneakyThrows
     @Deprecated
     private void sendMsg(Message msg, String text) throws TelegramApiException {
         SendMessage s = new SendMessage();
